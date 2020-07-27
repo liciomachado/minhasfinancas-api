@@ -1,5 +1,7 @@
 package com.react.minhasfinancas.service;
 
+import java.util.Optional;
+
 import com.react.minhasfinancas.model.entity.Usuario;
 
 public interface UsuarioService {
@@ -10,5 +12,5 @@ public interface UsuarioService {
 	
 	void validarEmail(String email);
 	
-	
+	Optional<Usuario> obterPorId(Long id);
 }
